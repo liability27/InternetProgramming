@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/_Layout.cshtml";
+}
+<h1>Contact Details</h1>
+<div class="contact">
+    <img src="pics/jordan.jpg" height="100">
+
+    <dl>
+        <dt>Fulfilment Executive</dt>
+        <dd>Name: Jordan Belfort</dd>
+        <dd>Phone No: 555-255748</dd>
+        <dd>Email: J.Belfort@nmdmusic.com</dd>
+    </dl>
+</div>
+<div class="contact">
+    <img src="pics/donnie.jpg" height="100">
+
+    <dl>
+        <dt>Marketing Officer</dt>
+        <dd>Name: Donnie Azoff</dd>
+        <dd>Phone No: 555-225725</dd>
+        <dd>Email: D.Azoff@nmdmusic.com</dd>
+    </dl>
+</div>
+<div class="contact">
+    <img src="pics/brad.jpg" height="100">
+
+    <dl>
+        <dt>Secretary</dt>
+        <dd>Name: Brad</dd>
+        <dd>Phone No: 555-525277</dd>
+        <dd>Email: Brad@nmdmusic.com</dd>
+    </dl>
+</div>
+<div>
+    <form name=myform>
+
+        <select>
+            <option value="sales">Sales</option>
+            <option value="returns">Returns</option>
+            <option value="shipping">Shipping</option>
+        </select><br>
+        <textarea id="message" rows=3 cols=40></textarea><br>
+
+        Please enter your Name:
+        <input type=text name= "name" value="" size=10><br><br>
+        Please enter your email:
+        <input type=text name=email value="" size=10><br><br>
+        <input type=button name=button1 value="Submit" onclick="validate()" ;>
+    </form>
+</div>

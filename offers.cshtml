@@ -1,0 +1,101 @@
+﻿@{
+    Layout = "~/_Layout.cshtml";
+}
+<h1>Special Offers</h1>
+<div class="special">
+    <div id="description">Product: </div>
+    <table>
+        <tr>
+            <td><!-- image --></td>
+            <td>Title</td>
+            <td>Description</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td><img src="pics/epiphone.jpg" onmouseover="epiphone()" onmouseout="blank()"></td>
+            <td><p>Epiphone Les Paul Standard</p></td>
+            <td>
+                Epiphone Les Paul Standard Ebiny, electric guitar, mahogany body, mahogany neck
+                rosewood fretboard, 42,67 mm saddle width, 628mm scale length, 2x alnico classic
+                humbucking pick-ups, Grover tuners, chrome hardware, trapez inlays
+            </td>
+            <td><p2>Was €400</p2><br><p>Now €349</p></td>
+        </tr>
+        <tr>
+            <td><img src="pics/strat.jpg" onmouseover="strat()" onmouseout="blank()"></td>
+            <td><p>Fender Am Special Strat VIB FSR</p></td>
+            <td>
+                Fender American Special Stratocaster VIB FSR, e-guitar, Thomann 60th Anniversary
+                model, alder body, maple neck with "C" shape, thomann rosewood fretboard, 22 Jumbo
+                frets, 3 x American Standard Strat single coil pickups, w/no-load poti, vintage
+                style synchronized tremolo, 648 mm scale lenght, 43 mm saddle width, chrome hardware,
+                colour: violin burst (handstained), incl. original Fender gigbag, made in USA
+            </td>
+            <td><p2>Was €1000</p2><br><p>Now €759</p></td>
+        </tr>
+        <tr>
+            <td><img src="pics/25watt.jpg" onmouseover="amp25()" onmouseout="blank()"></td>
+            <td><p>Ampeg BA108</p></td>
+            <td>
+                Ampeg BA108, bass combo, solid state, 25 watts, 1 x 8" speaker, 3-band EQ,
+                adjustable CD input, headphone out, thomann effect loop, line out, 0 dB and -15 dB
+                inputs, weight: 12,5 kg (27 lbs)
+            </td>
+            <td><p2>Was €150</p2><br><p>Now €98</p></td>
+        </tr>
+        <tr>
+            <td><img src="pics/22watt.jpg" onmouseover="amp22()" onmouseout="blank()"></td>
+            <td><p>Vox VT40+</p></td>
+            <td>
+                Vox VT40+ Electric Guitar Combo - 60W, 1x 10" speaker, 33 amp models, 11 pedal effects,
+                11 modulation/delay types, thomann 3 reverb types, noise reduction, 99 programs, 8 user presets
+                (2 banks x 4 channels), headphone/recording out, aux in, footswitch in. Footswitch optional (Vox VFS5).
+                Dimensions: 422 x 406 x 222mm. Weight: 10.9kg; Cover #252156 (optional)
+            </td>
+            <td><p2>Was €260</p2><br><p>Now €215</p></td>
+        </tr>
+        <tr>
+            <td><img src="pics/signal.jpg" width="300" onmouseover="pa()" onmouseout="blank()"></td>
+            <td><p>Behringer DCX2496 Ultradrive Pro</p></td>
+            <td>
+                Behringer DCX2496 Ultradrive Pro digital 24-bit/96kHz loudspeaker management system -
+                3 analogue inputs (one doubles as a digital thomann AES/EBU input) and 6 analogue outs for great
+                flexibility, high-end AKM 24-bit/96kHz A/D and D/A converters, "zero"-attack limiter, extremely
+                flexible output configuration, individual crossover filter types. NOTE: RS-232 cable not included!
+                19", 1HE
+            </td>
+            <td><p2>Was €1000</p2><br><p>Now €759</p></td>
+        </tr>
+    </table>
+    <script>
+        function blank()
+        {
+            document.getElementById("description").innerHTML = "Product:";
+        }
+        function epiphone()
+        {
+            document.getElementById("description").innerHTML += "Epiphone Les Paul";
+
+        }
+        function strat()
+        {
+            document.getElementById("description").innerHTML += "Fender American Special Stratocaster";
+
+        }
+        function amp25()
+        {
+            document.getElementById("description").innerHTML += "25 watt amp";
+
+        }
+        function amp22()
+        {
+            document.getElementById("description").innerHTML += "22 watt amp";
+
+        }
+        function pa()
+        {
+            document.getElementById("description").innerHTML += "Pa system";
+
+        }
+    </script>
+</div>
